@@ -1,4 +1,32 @@
+package com.example;
+
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.junit.MockitoJUnitRunner;
+
+import java.util.List;
+
 import static org.junit.Assert.*;
+@RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-  
+
+    @Mock
+    Feline feline;
+
+
+    @Test
+    public void getSoundAlwaysSayMiau() {
+        Cat cat = new Cat(feline);
+        assertEquals("Мяу", cat.getSound());
+    }
+
+
+    @Test
+    public void getFoodAlwaysReturnAnimalsBirdsFish() throws Exception {
+        Cat cat1 = new Cat(feline);
+        Mockito.when(cat1.getFood()).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        assertEquals(List.of("Животные", "Птицы", "Рыба"),cat1.getFood());
+    }
 }
