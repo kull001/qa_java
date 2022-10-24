@@ -7,36 +7,33 @@ public class Lion implements AnimalParent{
     boolean hasMane;
     private AnimalParent animalParent;
 
-<span class="fc" id="L10">    public Lion(AnimalParent animalParent){</span>
 
-<span class="fc" id="L12">        this.animalParent = animalParent;</span>
-<span class="fc" id="L13">    }</span>
-
-<span class="fc" id="L15">    public Lion(String sex) throws Exception {</span>
-<span class="fc bfc" id="L16" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
-<span class="fc" id="L17">            hasMane = true;</span>
-<span class="pc bpc" id="L18" title="1 of 2 branches missed.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
-<span class="fc" id="L19">            hasMane = false;</span>
+<span class="fc" id="L11">    public Lion(String sex, AnimalParent animalParent) throws Exception {</span>
+<span class="fc bfc" id="L12" title="All 2 branches covered.">        if (&quot;Самец&quot;.equals(sex)) {</span>
+<span class="fc" id="L13">            hasMane = true;</span>
+<span class="fc bfc" id="L14" title="All 2 branches covered.">        } else if (&quot;Самка&quot;.equals(sex)) {</span>
+<span class="fc" id="L15">            hasMane = false;</span>
         } else {
-<span class="nc" id="L21">            throw new Exception(&quot;Используйте допустимые значения пола животного - самей или самка&quot;);</span>
+<span class="fc" id="L17">            throw new Exception(&quot;Используйте допустимые значения пола животного - самей или самка&quot;);</span>
         }
-<span class="fc" id="L23">    }</span>
+<span class="fc" id="L19">        this.animalParent = animalParent;</span>
+<span class="fc" id="L20">    }</span>
 
     //Feline feline = new Feline();
 
 
     public int getKittens() {
 
-<span class="fc" id="L30">        return animalParent.getKittens();</span>
+<span class="fc" id="L27">        return animalParent.getKittens();</span>
     }
 
     public boolean doesHaveMane() {
 
-<span class="fc" id="L35">        return hasMane;</span>
+<span class="fc" id="L32">        return hasMane;</span>
     }
 
     public List&lt;String&gt; getFood(String animalKind) throws Exception {
-<span class="fc" id="L39">        return animalParent.getFood(animalKind);</span>
+<span class="fc" id="L36">        return animalParent.getFood(animalKind);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

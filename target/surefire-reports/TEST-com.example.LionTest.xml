@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="5" failures="0" name="com.example.LionTest" time="0" errors="0" skipped="0">
+<testsuite tests="8" failures="0" name="com.example.LionTest" time="0" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2022.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
@@ -60,9 +60,12 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.LionTest" name="getKittensAlwaysReturn1" time="0"/>
-  <testcase classname="com.example.LionTest" name="getFoodSetPredatorExpectedAnimalsBirdsFish" time="0"/>
-  <testcase classname="com.example.LionTest" name="doesHaveManeSetFemaleExpectedFalse" time="0"/>
-  <testcase classname="com.example.LionTest" name="getFoodSetHerbivoreExpectedGrassVariousPlants" time="0"/>
-  <testcase classname="com.example.LionTest" name="doesHaveManeSetMaleExpectedTrue" time="0"/>
+  <testcase classname="com.example.LionTest" name="getKittensAlwaysReturn1[0]" time="0"/>
+  <testcase classname="com.example.LionTest" name="unknownAnimalTest[0]" time="0"/>
+  <testcase classname="com.example.LionTest" name="getFoodSetHerbivoreExpectedGrassVariousPlants[0]" time="0"/>
+  <testcase classname="com.example.LionTest" name="doesHaveManeSetMaleOrFemaleExpectedTrueORFalse[0]" time="0"/>
+  <testcase classname="com.example.LionTest" name="getKittensAlwaysReturn1[1]" time="0"/>
+  <testcase classname="com.example.LionTest" name="unknownAnimalTest[1]" time="0"/>
+  <testcase classname="com.example.LionTest" name="getFoodSetHerbivoreExpectedGrassVariousPlants[1]" time="0"/>
+  <testcase classname="com.example.LionTest" name="doesHaveManeSetMaleOrFemaleExpectedTrueORFalse[1]" time="0"/>
 </testsuite>

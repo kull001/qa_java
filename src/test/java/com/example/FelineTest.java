@@ -29,18 +29,18 @@ public class FelineTest {
     }
 
     Feline feline = new Feline();
-    @Before
-    public void init() {
-        MockitoAnnotations.initMocks(this);
-    }
-    @Test
-    public void eatMeatAlwaysReturnAnimalsBirdsFish() throws Exception {
+    //@Before
+    //public void init() {
+        //MockitoAnnotations.initMocks(this);
+    //}
+    //@Test
+    //public void eatMeatAlwaysReturnAnimalsBirdsFish() throws Exception {
 
-        Animal animal = Mockito.mock((Animal.class));
-        Mockito.when(animal.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
-        assertEquals(List.of("Животные", "Птицы", "Рыба"),feline.eatMeat());
+        //Animal animal = Mockito.mock((Animal.class));
+        //Mockito.when(animal.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
+        //assertEquals(List.of("Животные", "Птицы", "Рыба"),feline.eatMeat());
 
-    }
+    //}
 
     @Test
     public void getFamilyAlwaysReturnFeline() {
